@@ -9,7 +9,7 @@ export default extendTheme({
 		primary: theme.colors.twitter,
 	},
 	styles: {
-		global: (props) => ({
+		global: (props: any) => ({
 			"html, body, #root": {
 				height: "100%",
 				color: mode(undefined, "whiteAlpha.800")(props),
@@ -30,7 +30,7 @@ export default extendTheme({
 				},
 			},
 			variants: {
-				solid: (props) => ({
+				solid: (props: any) => ({
 					backgroundColor: `${props.colorScheme}.500`,
 					color: mode(undefined, "white")(props),
 					fontWeight: "bold",
@@ -38,7 +38,7 @@ export default extendTheme({
 						backgroundColor: `${props.colorScheme}.600`,
 					},
 				}),
-				outline: (props) => ({
+				outline: (props: any) => ({
 					borderColor: `${props.colorScheme}.500`,
 					color: `${props.colorScheme}.500`,
 					fontWeight: "bold",
